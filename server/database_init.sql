@@ -20,7 +20,7 @@ CREATE TABLE file_info (
     id UUID DEFAULT uuid_generate_v4() NOT NULL PRIMARY KEY,
     title VARCHAR(20) NOT NULL,
     file_path VARCHAR(500) NOT NULL UNIQUE,
-    file_description VARCHAR(50),
+    file_description VARCHAR(150),
     category_id UUID REFERENCES category(id) NOT NULL
 );
 
