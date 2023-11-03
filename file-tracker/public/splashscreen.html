@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash screen</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Made by Aless</h1>
+        <img class="logo" src="./logo.png" width="200px">
+        <div class="background-circle">
+            <div></div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        font-family: sans-serif;
+        background-color: black;
+        color: #f0ebd8;
+
+        overflow: hidden;
+
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        border-radius: 200px;
+        animation: logo-anim 3s forwards;
+    }
+
+    .background-circle {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+
+    .background-circle div {
+        width: 1px;
+        height: 1px;
+        background-color: #0d1321;
+
+        border-radius: 100%;
+
+        z-index: -1;
+
+        animation: circle-anim 4s forwards cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    @keyframes logo-anim {
+        0% {
+            opacity: 0;
+            transform: translateY(300px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes circle-anim {
+        0% {
+            padding: 0%;
+        }
+
+        100% {
+            padding: 100%;
+        }
+    }
+</style>
+</html>

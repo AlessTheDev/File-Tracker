@@ -1,0 +1,54 @@
+$rich-black: #0d1321ff;
+$prussian-blue: #1d2d44ff;
+$paynes-gray: #3e5c76ff;
+$silver-lake-blue: #748cabff;
+$eggshell: #f0ebd8ff;
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+
+    padding: 10px;
+
+    border-radius: 40px;
+    background-color: $paynes-gray;
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        margin-left: 10px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+
+        margin-right: 10px;
+    }
+}
+
+.category-detail{
+    border: 0;
+    border-radius: 5px;
+
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+
+    background-color: rgba(255, 255, 255, 0.678);
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: large;
+
+    cursor: pointer;
+}

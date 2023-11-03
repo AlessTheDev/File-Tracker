@@ -1,0 +1,57 @@
+.filters-window {
+    display: flex;
+
+    flex-direction: column;
+
+    width: 70%;
+    height: 70px;
+    margin: auto;
+    margin-top: 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 10px;
+
+    background-color: #a8c1d885;
+
+    transition: height 0.5s;
+
+    overflow: hidden;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 5px;
+    }
+    .expand-button {
+        transition: 0.7s;
+        transform: rotateZ(0deg);
+    }
+}
+
+.filters-expanded{
+    margin-top: 5px;
+
+    
+    width: 100%;
+
+    form{
+        .form-element{
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            input{
+                width: 80%;
+                padding: 5px;
+                margin: 5px;
+                border-radius: 100px;
+                border: 0;
+            }
+        }
+    }
+}
